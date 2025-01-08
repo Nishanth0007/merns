@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>
+            IMPRESSIVE FORM DESIGN
+        </title>
+        <style>
+            body
+            {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background: linear-gradient();
+                margin: 0;
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+                height: 110vh;
+
+            }
+            .form
+            {
+                background-color: violet;
+                backdrop-filter: blur();
+                padding: 28px;
+                border-radius: 15px;
+                max-width: 400px;
+                box-shadow: 0 8px 20px rgba(rgb(140, 42, 42), rgb(34, 88, 34), rgb(14, 14, 200), alpha);
+            }
+            .form h1{
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 2 rem;
+                color: rgb(179, 14, 14);
+                text-shadow: 2px 2px 2px ;
+            }
+            .form label{
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+                color: beige;
+            }
+            .form input[type="text"],
+            .form input[type="email"],
+            .form input[type="password"],
+            .form button{
+                width: 100%;
+                padding: 12px 20px;
+                margin-bottom: 18px;
+                border-radius: 8px;
+                border:none;
+                outline: none;
+                font-size: 1 rem;
+                transition: all 0.5s ease;
+            }
+            .form input[type="text"],
+            .form input[type="email"],
+            .form input[type="password"]
+            {
+                background: pink;
+                box-shadow: 0 0 8px rgb(14, 14, 200);
+
+            }
+            .form button{
+                background: wheat;
+                font-weight: bold;
+                box-shadow: 0 4px 8px rgb(14, 14, 200);
+            }
+            .form button:hover
+            {
+                background: red;
+                box-shadow: 0 6px 12px rgb(34, 88, 34);
+                transform: translateY(-3px);
+            }
+            .form p{
+                text-align: center;
+                font-size: 0.7 rem;
+                color: aquamarine;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="form">
+            <h1>
+                SIGN UP
+            </h1>
+            <form action="">
+                <label for="name">NAME</label>
+            <input type="text" id="name" name="name" placeholder="name"required><br>
+
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="email"required><br>
+
+            <label for="password">PASSSWORD</label>
+            <input type="password" id="password" name="password" placeholder="********"required>
+
+            <button type="submit">CLICK HERE</button>
+            <p>Already have an account ?<a href ="login.html">Sign In</a></p>
+
+        </div>
+
+            </form>
+            
+    </body>
+</html>
