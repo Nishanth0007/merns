@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 110vh;
+                background: linear-gradient(green,yellow,rgb(255, 166, 0));
+                color: aqua;
+            }
+            .glow
+            {
+                color: orange;
+                margin-top: 30px;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: large;
+                border: black;
+                border-radius: 500px;
+                margin-left: 200px;
+                margin-right: 200px;
+                padding: 20;
+                background: linear-gradient(red,blue,green)
+
+            }
+            .glow:hover{
+                transform: translateY(-7px);
+                box-shadow:0 12px 25px red;
+                transition: all 0.5s ease;
+            }
+            .glow:active{
+                transform: translateY(3px);
+                box-shadow: blue;
+                
+            }
+        </style>
+    </head>
+    <body>
+        
+        <button class="glow"> CLICK HERE</button>
+    </body>
+</html>

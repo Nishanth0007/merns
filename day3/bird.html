@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #87ceeb, #1e90ff);
+            overflow: hidden;
+        }
+
+        .bird {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            animation: fly 6s linear infinite;
+        }
+
+        .bird-body {
+            position: absolute;
+            background-color: black;
+            width: 70px;
+            height: 50px;
+            border-radius: 50%;
+            top: 20px;
+            left: 15px;
+        }
+
+        .wing {
+            position: absolute;
+            background-color: blue;
+            width: 35px;
+            height: 40px;
+            border-radius: 50%;
+            top: 0;
+            transform-origin: bottom center;
+            animation: flap 0.5s ease-in-out infinite;
+        }
+
+        .left-wing {
+            left: -15px;
+        }
+
+        .right-wing {
+            right: -15px;
+        }
+
+        @keyframes fly {
+            0% {
+                transform: translateX(-150px) translateY(22px);
+            }
+            25% {
+                transform: translateX(150px) translateY(-20px);
+            }
+            50% {
+                transform: translateX(300px) translateY(30px);
+            }
+            75% {
+                transform: translateX(450px) translateY(-15px);
+            }
+            100% {
+                transform: translateX(600px) translateY(22px);
+            }
+        }
+
+        @keyframes flap {
+            0%, 100% {
+                transform: rotate(30deg);
+            }
+            50% {
+                transform: rotate(-30deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bird">
+        <div class="bird-body"></div>
+        <div class="wing left-wing"></div>
+        <div class="wing right-wing"></div>
+    </div>
+</body>
+</html>
