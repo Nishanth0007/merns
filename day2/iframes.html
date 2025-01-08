@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>
+            IFRAMES
+        </title>
+        <style>
+            body
+            {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-align: center;
+                background-color: aliceblue;
+                color: black;
+                padding: 18px;
+            }
+            h1{
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+            .cont
+            {
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+                gap: 15px;
+                padding: 20px;
+                max-width: 100px;
+                margin: auto;
+            }
+            .frame
+            {
+                width: 100%;
+                height: 250px;
+                border: 5px,solid,violet;
+
+            }
+            iframe{
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+            @media(max-width:760px)
+            {
+                .cont
+                {
+                    grid-template-columns:repeat(auto-fit,minmax(200px,1fr)) ;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>INTERATIVE IFRAME PAGE</h1>
+        <div class="cont">
+            <div class="frame">
+                <iframe src="C:\wed\Desktop\ippo\hqdefault.jpg" title="MAKUNOCHI">
+            </div>
+            <div class="frame">
+                <iframe src="http://vagabondmangafree.com/index.html" title="GHOST"></iframe>
+
+            </div>
+            <div class="frame">
+                <iframe src="http://vagabondmangafree.com/index.html" title="JIN"></iframe>
+            </div>
+            <div class="frame">
+                <iframe src="http://vagabondmangafree.com/index.html" title="SAKAI"></iframe>
+            </div>
+            <div class="frame">
+                <iframe src="http://vagabondmangafree.com/index.html" title="SAKAI"></iframe>
+            </div>
+            <h2>
+                GOOGLE MAP IFRAME
+            </h2>
+            <div class="frame">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15654.876849832612!2d79.44057490267095!3d11.208398573483837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54d437d5de23ff%3A0xe1e285be9af19719!2sGangaikonda%20Cholapuram%2C%20Tamil%20Nadu%20612901!5e0!3m2!1sen!2sin!4v1736223940411!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </iframe>
+                
+            </div>
+            <h2>
+                YOUTUBE FRAME VIDEO
+            </h2>
+            <div class="frame">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GbNy5_KFtGU?si=mK4RX92oQHvli5Aa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    
+    </body>
+</html>
