@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/');
+@import url('https://fonts.google.com/');
+
+body{
+    background: linear-gradient(red,green,blue);
+    background: no-repeat;
+    height: 110vh;
+    width: 110vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+}
+h1{
+    margin-top: 6%;
+    font-size: 48px;
+}
+#button
+{
+    width: 160px;
+    height: 160px;
+    background: white;
+    color: black;
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+
+}
+#button:hover
+{
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px purple;
+    cursor: pointer;
+}
+#funcont,#fun
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+
+}
+#funcont,#minion
+{
+    margin-top: 6%;
+}
+#footer
+{
+    font-size: 25px;
+    line-height: 34px;
+    text-decoration: none;
+    color: white;
+}
